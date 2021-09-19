@@ -6,13 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tasks</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        a{
+            color: black;
+        }
+        a:hover {
+            text-decoration: none
+        }
+    </style>
     @livewireStyles
 </head>
 <body>
     <div class="container">
+        
         {{ $slot }}
     </div>
+    
+    
 
     @livewireScripts
+    
+    
 </body>
 </html>

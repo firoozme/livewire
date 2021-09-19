@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Todo;
+use App\Http\Livewire\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +17,5 @@ use App\Http\Livewire\Todo;
 
 
 
-Route::get('task/user/{id}', Todo::class);
+Route::get('/', User::class)->name('users');
+Route::get('task/user/{id}', Todo::class)->name('user.task');
